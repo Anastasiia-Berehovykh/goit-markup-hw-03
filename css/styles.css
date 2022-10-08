@@ -8,20 +8,38 @@
     --secondary-bgr:#F5F4FA;
     --primary-bgr:#F5F5F5;
     --bgr-footer-hiro:#2F303A;
+}
 
+html{
+    box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
 }
 
 
-
 body{
+    margin: 0px;
  color:var(--primary-text-color); 
  background-color:var(--white); 
  font-family:'Roboto', sans-serif,'Raleway', sans-serif;
  font-size: 14px;
  letter-spacing: 0.03em;
   }
+  .page-header{
+    
+  }
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
 
+}
 .logo-web{
     color:var(--accent);
     font-family: 'Raleway';
@@ -83,21 +101,32 @@ line-height: 1.14;
 }
 /* hero */
 .hero{
+    text-align: center;
     background-color:var(--bgr-footer-hiro);
+    
+    
 }
 
 .hero-title{
+    margin-top: 0px;
+    margin-bottom: 23px;
+
+
     font-family: 'Roboto';
 font-style: 400;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
+
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color:var(--white);
 }
 .list{
+    padding: 0;
+    margin: 0;
+
+
     list-style: none;
 }
 
@@ -105,9 +134,21 @@ color:var(--white);
 .button{
     color:var(--title-text-color);
     background-color:var(--primary-bgr);
+    border-color: transparent;
+    display: inline-block;
+    border-radius: 4px;
+    
 }
 
 .button.primary{
+    padding: 10px 32px;
+    min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    
+    
+
+
     color:var(--white);
     background-color:var(--accent) ;
     font-family: 'Roboto';
@@ -117,12 +158,18 @@ font-size: 16px;
 line-height: 1.88;
 display: flex;
 align-items: center;
-text-align: center;
+
 letter-spacing: 0.06em;
 cursor: pointer;
 }
 
 .button.secondary{
+    padding: 6px 22px;
+    min-width: 86px;
+    background-color: var(--secondary-bgr);
+    
+    
+
     color:var(--title-text-color);
     background-color:var(--secondary-bgr);
     font-family: 'Roboto';
@@ -130,7 +177,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-text-align: center;
+
 letter-spacing: 0.03em;
 cursor: pointer;
 }
@@ -143,12 +190,26 @@ cursor: pointer;
 }
 
 .button-nav{
+    
+
     list-style-type: none;
   }
 
 
 /* section-title */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title{
+    margin-top: 0;
+    margin-bottom: 94px;
     color:var(--title-text-color) ;
   font-weight: 700;
 font-size: 36px;
@@ -156,7 +217,13 @@ line-height: 1.16;
 text-align: center;
 }
 
+.section-title-portfolio{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .visually-hidden {
+    
     position: absolute;
     width: 1px;
     height: 1px;
@@ -171,6 +238,8 @@ text-align: center;
 
 /* feature-list */
 .feature-list .title{
+    margin-top: 0;
+    margin-bottom: 10px;
     color:var(--title-text-color) ;
  font-weight: 700;
 font-size: 14px;
@@ -179,20 +248,32 @@ text-transform: uppercase;
 }
 
 .feature-list .text{
+    margin-top: 0;
+    margin-bottom: 0;
   font-size: 14px;
 line-height: 1.71;
 }
 
 .feature-list{
     list-style-type: none;
+    
    }
 
 .examples{
     list-style-type: none;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.ex{
+    margin-top: 94px;
+    margin-bottom: 50px;
 }
 
 /* teem */
 .teem .title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     color:var(--title-text-color);
     background-color:var(--secondary-bgr);
 font-weight: 500;
@@ -201,6 +282,11 @@ line-height: 1.19;
 text-align: center;
 
 }
+.teem .title-stuff{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
 .teems{
     background-color: var(--secondary-bgr)
 }
@@ -215,6 +301,9 @@ text-align: center;
 
 /* project */
 .project .title{
+    margin-top: 20px;
+    margin-bottom: 4px;
+
     color:var(--title-text-color);
     font-weight: 700;
 font-size: 18px;
@@ -223,10 +312,16 @@ letter-spacing: 0.06em;
 }
 
 .project{
+    margin-top: 34px;
+
     list-style-type: none;
   font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
+}
+.project .title-project{
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .adress .adress-link{
