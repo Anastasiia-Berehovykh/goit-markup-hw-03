@@ -39,9 +39,7 @@ body{
   p{
     margin: 0;
   }
-  .page-header{
-    
-  }
+ 
   img{
     display: block;
     max-width: 100%;
@@ -75,7 +73,20 @@ body{
     text-decoration: none;
     // color: inherit;
 }
+.page-header{
+    
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+
 .logo-web{
+    
     color:var(--accent);
     font-family: 'Raleway';
     text-decoration: none;
@@ -85,6 +96,8 @@ line-height: 1.19;
 }
 
 .logo-studio{
+    margin-right: 93px;
+    
     color:var(--black);
     font-family: 'Raleway';
     text-decoration: none;
@@ -94,9 +107,19 @@ line-height: 1.19;
 }
 
 /* site-nav */
+.site-nav{
+    display: flex;
+    
+}
 
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
 
 .site-nav .link{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color:var(--title-text-color);
     font-family: 'Roboto';
 font-weight: 500;
@@ -118,6 +141,20 @@ letter-spacing: 0.02em;
 }
 
 /* auth-nav */
+.auth-nav{
+    
+    list-style-type: none;
+}
+.auth-nav{
+    display: flex;
+    
+}
+.auth-nav .item{
+    margin-left: auto;
+}
+.auth-nav .item+ .item{
+    margin-left: 50px;
+}
 .auth-nav .link{
     color:var(--primary-text-color) ;
     font-family: 'Roboto';
@@ -131,9 +168,7 @@ line-height: 1.14;
 .auth-nav .link:focus{
     color:var(--accent) ;
 }
-.auth-nav{
-    list-style-type: none;
-}
+
 /* hero */
 .hero{
     text-align: center;
@@ -289,13 +324,19 @@ line-height: 1.71;
    }
 
 .examples{
+    display: flex;
+
     list-style-type: none;
     margin-top: 94px;
     margin-bottom: 50px;
 }
 .ex{
+    margin-bottom: 50px;
     margin-top: 94px;
     margin-bottom: 50px;
+}
+.examples .item+ .item{
+    margin-left: 30px;
 }
 
 /* teem */
@@ -317,15 +358,21 @@ text-align: center;
 }
 
 .teems{
+    display: flex;
     background-color: var(--secondary-bgr)
 }
 .teem{
+    display: flex;
+    
     list-style-type: none;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 
+}
+.stuff{
+    display: flex;
 }
 
 /* project */
