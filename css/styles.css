@@ -60,7 +60,7 @@ body{
     padding-bottom: 94px;
   }
 .container{
-    width: 1200px;
+    width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -79,7 +79,10 @@ body{
 .main-nav{
     display: flex;
     align-items: center;
+    width: 1200px;
+    margin: auto;
 }
+
 .nav{
     display: flex;
     align-items: center;
@@ -173,9 +176,9 @@ line-height: 1.14;
 .hero{
     text-align: center;
     background-color:var(--bgr-footer-hiro);
-    
-    
+
 }
+
 
 .hero-title{
     margin-top: 0px;
@@ -196,6 +199,7 @@ color:var(--white);
 
 /* button */
 .button{
+    
     color:var(--title-text-color);
     background-color:var(--primary-bgr);
     border-color: transparent;
@@ -205,6 +209,7 @@ color:var(--white);
 }
 
 .button.primary{
+    
     padding: 10px 32px;
     min-width: 216px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -220,7 +225,6 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
 align-items: center;
 
 letter-spacing: 0.06em;
@@ -254,11 +258,15 @@ cursor: pointer;
 }
 
 .button-nav{
-    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 
     list-style-type: none;
   }
-
+.button-nav .button.secondary:not(:last-child){
+    margin-right: 8px;
+}
 
 /* section-title */
 .section{
@@ -317,8 +325,17 @@ text-transform: uppercase;
   font-size: 14px;
 line-height: 1.71;
 }
+.feature-list .item{
+    margin-top: 94px;
+    justify-content: space-between;
 
+}
+.feature-list .item:not(:last-child){
+    margin-right: 30px;
+}
 .feature-list{
+    display: flex;
+
     list-style-type: none;
     
    }
@@ -333,13 +350,21 @@ line-height: 1.71;
 .ex{
     margin-bottom: 50px;
     margin-top: 94px;
-    margin-bottom: 50px;
+    
+}
+.examples .item{
+    margin-bottom: 94px;
 }
 .examples .item+ .item{
     margin-left: 30px;
 }
 
 /* teem */
+.section-title.stuffs{
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
 .teem .title{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -352,9 +377,8 @@ line-height: 1.19;
 text-align: center;
 
 }
-.teem .title-stuff{
-    margin-top: 0;
-    margin-bottom: 30px;
+.teem .stuff:not(:last-child){
+    margin-right: 30px;
 }
 
 .teems{
@@ -371,8 +395,8 @@ line-height: 1.19;
 text-align: center;
 
 }
-.stuff{
-    display: flex;
+.teem .title-stuff{
+    padding-bottom: 94px;
 }
 
 /* project */
@@ -388,16 +412,32 @@ letter-spacing: 0.06em;
 }
 
 .project{
-    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
 
+
+    margin-top: 34px;
     list-style-type: none;
   font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 }
+.container{
+    background-color: #212121;
+}
+.project-name{
+    width: 370px;
+    
+    
+}
+
+
+    
+
 .project .title-project{
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .adress .adress-link{
