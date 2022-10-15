@@ -60,7 +60,7 @@ body{
     padding-bottom: 94px;
   }
 .container{
-    width: 1230px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     
@@ -74,15 +74,13 @@ body{
     text-decoration: none;
     // color: inherit;
 }
-.page-header{
-    
-}
-.main-nav{
+
+.page-header .container{
     display: flex;
     align-items: center;
-    width: 1230px;
-    margin: auto;
+    
 }
+
 
 .nav{
     display: flex;
@@ -90,6 +88,7 @@ body{
 }
 
 .logo-web{
+    margin-right: 93px;
     
     color:var(--accent);
     font-family: 'Raleway';
@@ -100,7 +99,7 @@ line-height: 1.19;
 }
 
 .logo-studio{
-    margin-right: 93px;
+    
     
     color:var(--black);
     font-family: 'Raleway';
@@ -146,15 +145,17 @@ letter-spacing: 0.02em;
 
 /* auth-nav */
 .auth-nav{
-    
+   display: flex;
+}
+ .auth-nav{
     list-style-type: none;
-}
-.auth-nav{
-    display: flex;
+ }   
     
-}
+
+
 .auth-nav .item{
     margin-left: auto;
+    
 }
 .auth-nav .item+ .item{
     margin-left: 50px;
