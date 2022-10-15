@@ -83,8 +83,8 @@ body{
 
 
 .nav{
-    display: flex;
-    align-items: center;
+  display: flex;  
+    
 }
 
 .logo-web{
@@ -146,6 +146,7 @@ letter-spacing: 0.02em;
 /* auth-nav */
 .auth-nav{
    display: flex;
+   
 }
  .auth-nav{
     list-style-type: none;
