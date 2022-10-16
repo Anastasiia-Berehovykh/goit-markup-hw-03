@@ -83,7 +83,8 @@ body{
 
 
 .nav{
-  display: flex;  
+  display: flex; 
+  align-items: center; 
     
 }
 
@@ -121,8 +122,8 @@ line-height: 1.19;
 
 .site-nav .link{
     display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color:var(--title-text-color);
     font-family: 'Roboto';
 font-weight: 500;
@@ -146,6 +147,7 @@ letter-spacing: 0.02em;
 /* auth-nav */
 .auth-nav{
    display: flex;
+   margin-left: auto;
    
 }
  .auth-nav{
@@ -156,6 +158,7 @@ letter-spacing: 0.02em;
 
 .auth-nav .item{
     margin-left: auto;
+    
     
 }
 .auth-nav .item+ .item{
@@ -177,6 +180,7 @@ line-height: 1.14;
 
 /* hero */
 .hero{
+    padding: 200px 0;
     text-align: center;
     background-color:var(--bgr-footer-hiro);
 
@@ -184,8 +188,9 @@ line-height: 1.14;
 
 
 .hero-title{
-    margin-top: 0px;
-    margin-bottom: 23px;
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 
 
     font-family: 'Roboto';
@@ -272,14 +277,10 @@ cursor: pointer;
 }
 
 /* section-title */
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .section.no-padding{
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;  
 }
 
 .section-title{
@@ -329,8 +330,7 @@ text-transform: uppercase;
 line-height: 1.71;
 }
 .feature-list .item{
-    margin-top: 94px;
-    justify-content: space-between;
+   
 
 
 }
@@ -349,16 +349,15 @@ line-height: 1.71;
     display: flex;
 
     list-style-type: none;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    
 }
 .ex{
     margin-bottom: 50px;
-    margin-top: 94px;
+    
     
 }
 .examples .item{
-    margin-bottom: 94px;
+   
 }
 .examples .item+ .item{
     margin-left: 30px;
