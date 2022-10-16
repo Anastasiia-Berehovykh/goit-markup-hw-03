@@ -52,7 +52,7 @@
         <button type="button" class="button primary">Замовити послугу</button>
       </section>
 
-      <section class="section no-padding">
+      <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">
             Приклади ефективних рішень
@@ -106,33 +106,46 @@
         </div>
       </section>
 
-      <section class="section teems no-padding">
+      <section class="section teems">
         <div class="container">
           <h2 class="section-title stuffs">Наша команда</h2>
-          <ul class="teem">
+          <ul class="teem list">
             <li class="stuff">
               <img src="./img/2(2).jpg" alt="Фото" width="270" />
-
-              <h3 class="title">Ігор Дем'яненко</h3>
+              <div class="stuff-name">
+                <h3 class="title">Ігор Дем'яненко</h3>
               <p class="title-stuff">Product Designer</p>
+              </div>
+
+              
             </li>
             <li class="stuff">
               <img src="./img/2(1).jpg" alt="Фото" width="270" />
+              <div class="stuff-name">
+                <h3 class="title">Ольга Рєпіна</h3>
+                <p class="title-stuff">Frontend Developer</p> 
+              </div>
 
-              <h3 class="title">Ольга Рєпіна</h3>
-              <p class="title-stuff">Frontend Developer</p>
+              
             </li>
             <li class="stuff">
               <img src="./img/4(2).jpg" alt="Фото" width="270" />
-
-              <h3 class="title">Микола Тарасов</h3>
+              <div class="stuff-name">
+                <h3 class="title">Микола Тарасов</h3>
               <p class="title-stuff">Marketing</p>
+              </div>
+
+              
             </li>
             <li class="stuff">
               <img src="./img/4(1).jpg" alt="Фото" width="270" />
-
-              <h3 class="title">Михайло Єрмаков</h3>
+              <div class="stuff-name">
+                <h3 class="title">Михайло Єрмаков</h3>
               <p class="title-stuff">UI Designer</p>
+
+              </div>
+
+              
             </li>
           </ul>
         </div>
@@ -140,12 +153,13 @@
     </main>
 
     <footer class="footer">
-      <a href="./index.html" class="logo-web"
+      <div class="container">
+        <a href="./index.html" class="logo-web"
         >Web<span class="logo-studio">Studio</span></a
       >
-      <address>
-        <ul class="adress">
-          <li>
+      <address class="adress-list">
+        <ul class="adress list">
+          <li class="item">
             <a
               href="https://goo.gl/maps/kBUqozYKJx82z9vv9"
               target="_blank"
@@ -154,16 +168,18 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="adress-auth"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="adress-auth">+380961111111</a>
           </li>
         </ul>
       </address>
+      </div>
+      
     </footer>
   </body>
 </html>
