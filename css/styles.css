@@ -74,11 +74,13 @@ body{
     text-decoration: none;
     // color: inherit;
 }
-
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+}
 .page-header .container{
    display: flex; 
    align-items: center;
-   border-bottom: 1px solid #ECECEC;
+   
     
 }
 
@@ -242,7 +244,7 @@ cursor: pointer;
 
 .button.secondary{
     padding: 6px 22px;
-    min-width: 86px;
+    
     background-color: var(--secondary-bgr);
     
     
@@ -270,8 +272,9 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
 
-    list-style-type: none;
+    
   }
 .button-nav .button.secondary:not(:last-child){
     margin-right: 8px;
@@ -363,7 +366,9 @@ line-height: 1.71;
 .examples .item+ .item{
     margin-left: 30px;
 }
-
+.work{
+    padding-top: 0;
+}
 /* teem */
 .section-title.stuffs{
     margin-bottom: 50px;
@@ -417,12 +422,13 @@ border-radius: 0px 0px 4px 4px;
 .project{
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    
+    gap: 30px;
     
 }
 .project-name{
     width: 370px;
-    margin: 15px;
+    
     
       
 }
@@ -434,6 +440,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .project-name .title-name{
     padding: 20px 24px;
+    border:1px solid #ECECEC;
 }
 
 .project .title{
@@ -455,7 +462,13 @@ letter-spacing: 0.06em;
 
 .project .title-project{
     margin-top: 0;
-    
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+
 }
 
 .adress .adress-link{
